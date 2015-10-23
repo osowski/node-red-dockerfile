@@ -2,7 +2,7 @@
 # https://gist.github.com/dceejay/9435867
 # Use the node.js v0.10.36 engine
 FROM node:0.10-slim
-MAINTAINER ceejay
+MAINTAINER osowski
 
 RUN mkdir /root/.node-red
  

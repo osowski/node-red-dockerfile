@@ -3,15 +3,19 @@
 # Use the node.js v0.10.36 engine
 FROM node:0.10-slim
 MAINTAINER ceejay
+
+RUN mkdir /root/.node-red
  
 # download latest stable node-red
+RUN npm install -g when
 RUN npm install -g node-red
 
+ADD custom-settings.js /root/.node-red/settings.js
+
 # use external storage for the user directory
-VOLUME /root/node-red
+VOLUME /root/.node-red
 
 # expose port
-#EXPOSE 1880
 EXPOSE 8080
  
 # Set the default command to execute

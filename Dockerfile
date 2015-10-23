@@ -7,8 +7,8 @@ MAINTAINER ceejay
 RUN mkdir /root/.node-red
  
 # download latest stable node-red
-RUN npm install -g when
-RUN npm install -g node-red
+RUN npm install -g when \
+	node-red
 
 ADD custom-settings.js /root/.node-red/settings.js
 

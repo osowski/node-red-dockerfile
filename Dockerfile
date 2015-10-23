@@ -8,7 +8,7 @@ MAINTAINER ceejay
 RUN npm install -g node-red
 
 # use external storage for the user directory
-VOLUME /root/.node-red
+VOLUME /root/node-red
 
 # expose port
 EXPOSE 1880

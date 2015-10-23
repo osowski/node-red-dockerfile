@@ -11,7 +11,8 @@ RUN npm install -g node-red
 VOLUME /root/node-red
 
 # expose port
-EXPOSE 1880
+#EXPOSE 1880
+EXPOSE 8080
  
 # Set the default command to execute
 # when creating a new container
